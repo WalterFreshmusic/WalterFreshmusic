@@ -201,5 +201,4 @@ window.WF_UPCOMING = [
     status: "tba",
     video: "assets/upcoming/panuelo-al-viento.mp4",
     cover: "assets/upcoming/panuelo-al-viento.png",
-  }
-]
+  }];
