@@ -490,6 +490,7 @@
             loop
             controlslist="nodownload noplaybackrate"
             oncontextmenu="return false"
+            poster="${r.cover || ''}"
             src="${r.video}"></video>
           <button class="upcoming-play" aria-label="Play preview">
             <svg class="ic-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
