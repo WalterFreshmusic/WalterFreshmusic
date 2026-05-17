@@ -483,15 +483,16 @@
       return `
       <article class="upcoming-card reveal delay-${i % 4} ${featured ? "featured" : "tba"}" data-idx="${i}">
         <div class="upcoming-media">
-          <video
-            preload="metadata"
-            playsinline
-            muted
-            loop
-            controlslist="nodownload noplaybackrate"
-            oncontextmenu="return false"
-            poster="${r.cover || ''}"
-            src="${r.video}"></video>
+         <video
+ preload="metadata"
+ playsinline
+ muted
+ autoplay
+ loop
+ controlslist="nodownload noplaybackrate"
+ oncontextmenu="return false"
+ poster="${r.cover || ''}"
+ src="${r.video}"></video>
           <button class="upcoming-play" aria-label="Play preview">
             <svg class="ic-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
             <svg class="ic-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
