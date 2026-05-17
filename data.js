@@ -125,13 +125,32 @@ window.WF_INEDITOS = [
 // Subí los MP3/WAV a assets/covers/ y agregalos abajo.
 // ============================================================
 window.WF_COVERS = [
-  { title: "Yo, Mañana",   subtitle: "(Cover) Walter Fresh", file: "assets/covers/yo-manana.mp3",     tone: "warm",  initials: "YM" },
-  { title: "Esa Mujer",    subtitle: "(Cover) Walter Fresh", file: "assets/covers/esa-mujer.mp3",     tone: "deep",  initials: "EM" },
-  { title: "El Embrujo",   subtitle: "(Cover) Walter Fresh", file: "assets/covers/el-embrujo.mp3",    tone: "noir",  initials: "EE" },
-  { title: "A Falta de Ti", subtitle: "(Cover) Walter Fresh", file: "assets/covers/a-falta-de-ti.mp3", tone: "gold",  initials: "AF" },
-  { title: "Era Mía",      subtitle: "(Cover) Walter Fresh", file: "assets/covers/era-mia.mp3",       tone: "smoke", initials: "EM" }
+  {
+    title: "Yo, Mañana",
+    subtitle: "(Cover) Walter Fresh",
+    file: "assets/covers/yo-manana.mp3"
+  },
+  {
+    title: "Esa Mujer",
+    subtitle: "(Cover) Walter Fresh",
+    file: "assets/covers/esa-mujer.mp3"
+  },
+  {
+    title: "El Embrujo",
+    subtitle: "(Cover) Walter Fresh",
+    file: "assets/covers/el-embrujo.mp3"
+  },
+  {
+    title: "A Falta de Ti",
+    subtitle: "(Cover) Walter Fresh",
+    file: "assets/covers/a-falta-de-ti.mp3"
+  },
+  {
+    title: "Era Mía",
+    subtitle: "(Cover) Walter Fresh",
+    file: "assets/covers/era-mia.mp3"
+  }
 ];
-
 // Próximos lanzamientos — videos con portada + estribillo
 // Los dos primeros tienen fecha confirmada y enlace de pre-save.
 window.WF_UPCOMING = [
