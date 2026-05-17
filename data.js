@@ -60,32 +60,34 @@ window.WF_RELEASES = [
 // estos audios son la única forma de escucharlos.
 // ============================================================
 window.WF_SOCIAL_ONLY = [
-  {
-    title: "Tu Nombre",
-    blurb: "Estrenó en redes · escuchá completa la versión",
-    file: "assets/social/tu-nombre.mp3",
-    cover: { image: "assets/social/tu-nombre.jpg" }
-  },
-  {
-    title: "Es Lo Que Hay",
-    blurb: "Estrenó en redes · escuchá completa la versión",
-    file: "assets/social/es-lo-que-hay.mp3",
-    cover: { image: "assets/social/es-lo-que-hay.png" }
-  },
-  {
-    title: "Mundo Nuevo",
-    blurb: "Estrenó en redes · escuchá completa la versión",
-    file: "assets/social/mundo-nuevo.mp3",
-    cover: { image: "assets/social/mundo-nuevo.png" }
-  },
-  {
-    title: "Más Real",
-    blurb: "Estrenó en redes · escuchá completa la versión",
-    file: "assets/social/mas-real.mp3",
-    cover: { image: "assets/social/mas-real.png" }
-  }
-];
+{
+title: "Tu Nombre",
+blurb: "Estrenó en redes • escuchá completa la versión",
+file: "assets/audio/TU-NOMBRE.mp3",
+cover: { image: "assets/covers/v07.jpg" }
+},
 
+{
+title: "Es Lo Que Hay",
+blurb: "Estrenó en redes • escuchá completa la versión",
+file: "assets/audio/ES-LO-QUE-HAY.mp3",
+cover: { image: "assets/covers/file_0000000090c471f795101f422679829d.png" }
+},
+
+{
+title: "Mundo Nuevo",
+blurb: "Estrenó en redes • escuchá completa la versión",
+file: "assets/audio/MUNDO-NUEVO.mp3",
+cover: { image: "assets/covers/file_00000000c75c71f5a4bd60b61958b669.png" }
+},
+
+{
+title: "Más Real",
+blurb: "Estrenó en redes • escuchá completa la versión",
+file: "assets/audio/MAS-REAL.mp3",
+cover: { image: "assets/covers/ChatGPT Image 21 abr 2026, 19_58_14.png" }
+}
+];
 // ============================================================
 // INÉDITOS — Temas con portada + estribillo para que los fans
 // voten cuál les llega más. Los votos se guardan en localStorage.
