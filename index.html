@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Walter Fresh — Deep House · R&B · Melodic · Emotional</title>
+  <meta name="description" content="Walter Fresh — Productor y artista de Deep House Melódico y R&B Emocional. Discografía, lanzamientos y booking.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Allura&family=Pinyon+Script&family=Dancing+Script:wght@600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- ============== NAV ============== -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#home" class="brand-mark">Walter Fresh</a>
+
+      <nav class="nav-links">
+        <a href="#home"      data-section data-i18n="nav.home">Inicio</a>
+        <a href="#about"     data-section data-i18n="nav.about">Sobre Mí</a>
+        <a href="#upcoming"  data-section data-i18n="nav.upcoming">Próximos</a>
+        <a href="#music"     data-section data-i18n="nav.music">Discografía</a>
+        <a href="#social"    data-section data-i18n="nav.social">Sólo en Redes</a>
+        <a href="#covers"    data-section data-i18n="nav.covers">Covers</a>
+        <a href="#inedito"   data-section data-i18n="nav.inedito">Inéditos</a>
+        <a href="#contact"   data-section data-i18n="nav.contact">Contacto</a>
+      </nav>
+
+      <div class="nav-right">
+        <div class="lang-toggle">
+          <span data-lang="es" class="on">ES</span>
+          <span style="color:var(--ink-mute)">·</span>
+          <span data-lang="en">EN</span>
+        </div>
+
+        <div class="nav-socials">
+          <a href="https://open.spotify.com/artist/1sRg7hmCkRmslxONx9BqQl" target="_blank" rel="noopener" aria-label="Spotify">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.5 17.32a.75.75 0 01-1.03.25c-2.82-1.72-6.37-2.11-10.55-1.16a.75.75 0 11-.33-1.46c4.57-1.04 8.5-.59 11.66 1.34.36.22.47.69.25 1.03zm1.47-3.28a.94.94 0 01-1.29.31c-3.23-1.99-8.16-2.56-11.99-1.4a.94.94 0 11-.55-1.8c4.38-1.33 9.81-.69 13.52 1.6.44.28.58.86.31 1.29zm.13-3.41C15.31 8.66 8.71 8.43 4.92 9.58a1.13 1.13 0 11-.66-2.16c4.35-1.32 11.63-1.06 16.21 1.66a1.13 1.13 0 01-1.16 1.94z"/></svg>
+          </a>
+          <a href="https://instagram.com/walterfresh.music" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+          </a>
+          <a href="https://tiktok.com/@walterfresh57" target="_blank" rel="noopener" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.6 6.3a4.6 4.6 0 01-3.4-1.5 4.6 4.6 0 01-1.2-3H11v12.4a2.6 2.6 0 11-2.6-2.6c.3 0 .6 0 .8.1V8.3a6 6 0 105.4 6V9.5a7.4 7.4 0 005 1.7V7.8a4.6 4.6 0 01-.2-.1 4.6 4.6 0 01.2-1.4z"/></svg>
+          </a>
+          <a href="https://facebook.com/WalterFresh57" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 22v-9h3l.5-3.5h-3.5V7.2c0-1 .3-1.7 1.7-1.7H17V2.3c-.4-.1-1.5-.2-2.7-.2-2.7 0-4.5 1.6-4.5 4.6V9.5H7V13h2.8v9h3.7z"/></svg>
+          </a>
+        </div>
+
+        <button class="hamburger" aria-label="Menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============== MOBILE MENU ============== -->
+  <div class="mobile-menu">
+    <button class="close" aria-label="Cerrar">✕</button>
+    <ul>
+      <li><a href="#home"     data-i18n="nav.home">Inicio</a></li>
+      <li><a href="#about"    data-i18n="nav.about">Sobre Mí</a></li>
+      <li><a href="#upcoming" data-i18n="nav.upcoming">Próximos</a></li>
+      <li><a href="#music"    data-i18n="nav.music">Discografía</a></li>
+      <li><a href="#social"   data-i18n="nav.social">Sólo en Redes</a></li>
+      <li><a href="#covers"   data-i18n="nav.covers">Covers</a></li>
+      <li><a href="#inedito"  data-i18n="nav.inedito">Inéditos</a></li>
+      <li><a href="#contact"  data-i18n="nav.contact">Contacto</a></li>
+    </ul>
+  </div>
+
+  <!-- ============== HERO ============== -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-grain"></div>
+
+    <div class="container hero-content">
+      <div class="hero-eyebrow reveal">
+        <span class="line"></span>
+        <span data-i18n="hero.eyebrow">Productor • DJ • Argentina</span>
+      </div>
+
+      <h1 class="hero-title reveal delay-1">Walter Fresh</h1>
+
+      <div class="hero-tags reveal delay-2">
+        <span>Deep House</span><span class="dot">•</span>
+        <span>R&amp;B</span><span class="dot">•</span>
+        <span>Melodic</span><span class="dot">•</span>
+        <span>Emotional</span>
+      </div>
+
+      <p class="hero-lede reveal delay-3" data-i18n="hero.lede">
+        Música que conecta, melodías que se sienten. Beats que se quedan en la memoria.
+      </p>
+
+      <div class="hero-cta reveal delay-4">
+        <a class="btn primary" href="https://open.spotify.com/artist/1sRg7hmCkRmslxONx9BqQl" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.5 17.32a.75.75 0 01-1.03.25c-2.82-1.72-6.37-2.11-10.55-1.16a.75.75 0 11-.33-1.46c4.57-1.04 8.5-.59 11.66 1.34.36.22.47.69.25 1.03zm1.47-3.28a.94.94 0 01-1.29.31c-3.23-1.99-8.16-2.56-11.99-1.4a.94.94 0 11-.55-1.8c4.38-1.33 9.81-.69 13.52 1.6.44.28.58.86.31 1.29zm.13-3.41C15.31 8.66 8.71 8.43 4.92 9.58a1.13 1.13 0 11-.66-2.16c4.35-1.32 11.63-1.06 16.21 1.66a1.13 1.13 0 01-1.16 1.94z"/></svg>
+          <span data-i18n="hero.cta.listen">Escuchar en Spotify</span>
+        </a>
+        <a class="btn" href="#music">
+          <span data-i18n="hero.cta.latest">Último Lanzamiento</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+
+      <div class="hero-scroll">
+        <span class="arrow"></span>
+        <span data-i18n="hero.scroll">Desliza</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== ABOUT ============== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-portrait reveal">
+          <img src="assets/walter-fresh-hero.png" alt="Walter Fresh">
+          <div class="about-portrait-tag">Walter Fresh · 2026</div>
+        </div>
+
+        <div class="about-text">
+          <div class="section-eyebrow reveal">
+            <span class="line"></span>
+            <span data-i18n="about.eyebrow">Sobre Mí</span>
+          </div>
+
+          <h2 class="section-title reveal delay-1">
+            <span data-i18n="about.title.l1">Melodías que te hablan.</span><br>
+            <span data-i18n="about.title.l2">Grooves que te</span>
+            <em data-i18n="about.title.l3">elevan</em>
+          </h2>
+
+          <p class="lede reveal delay-2" data-i18n="about.lede">
+            Creo canciones para quienes sienten demasiado y dicen poco.
+          </p>
+
+          <p class="reveal delay-3" data-i18n="about.p1">
+            Walter Fresh es productor y artista de Deep House melódico y R&amp;B emocional. Empecé produciendo y subiendo mezclas de todo tipo — canciones en inglés, bilingües, tech-engue, lentos, baladas — hasta que fui conociendo a mi público y empecé a acompañar su sentir.
+          </p>
+
+          <p class="reveal delay-3" data-i18n="about.p2">
+            Su música combina emociones reales con atmósferas profundas y beats que conectan: noches que todavía siguen vivas en la memoria, historias contadas a través de groove, melodía y silencio. Cada tema es una atmósfera. Cada atmósfera, una parte de lo que alguna vez dolió, sanó o se quedó.
+          </p>
+
+          <div class="about-quote reveal delay-4" data-i18n="about.quote">
+            Cada tema es una historia, una atmósfera y una parte de lo que alguna vez dolió.
+          </div>
+
+          <div class="stats reveal delay-4">
+            <div class="stat">
+              <div class="num" data-count="46" data-stat-key="releases"><span class="suffix">+</span></div>
+              <div class="label" data-i18n="stats.releases">Lanzamientos</div>
+            </div>
+            <div class="stat">
+              <div class="num" data-count="2020" data-no-format="true"></div>
+              <div class="label" data-i18n="stats.years">Creando desde</div>
+            </div>
+            <div class="stat">
+              <div class="num" data-count="15"><span class="suffix">+</span></div>
+              <div class="label" data-i18n="stats.countries">Países alcanzados</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== UPCOMING ============== -->
+  <section class="section alt" id="upcoming">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-eyebrow reveal">
+          <span class="line"></span>
+          <span data-i18n="upcoming.eyebrow">Próximos Lanzamientos</span>
+        </div>
+        <h2 class="section-title reveal delay-1">
+          <span data-i18n="upcoming.title.l1">Lo que viene.</span>
+          <em data-i18n="upcoming.title.l2">Estribillos en exclusiva.</em>
+        </h2>
+        <p class="section-sub reveal delay-2" data-i18n="upcoming.sub">
+          Adelantos visuales con un fragmento del estribillo. Dale play para escucharlo entero, y guardá el pre-save para que te llegue el día del lanzamiento.
+        </p>
+      </div>
+
+      <div class="upcoming-row" id="upcoming-row"><!-- rendered by app.js --></div>
+    </div>
+  </section>
+
+  <!-- ============== DISCOGRAPHY ============== -->
+  <section class="section" id="music">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-eyebrow reveal">
+          <span class="line"></span>
+          <span data-i18n="disco.eyebrow">Discografía</span>
+        </div>
+        <h2 class="section-title reveal delay-1">
+          <span data-i18n="disco.title.l1">Catálogo</span>
+          <em data-i18n="disco.title.l2">completo</em>
+        </h2>
+        <p class="section-sub reveal delay-2" data-i18n="disco.sub">
+          Todos los lanzamientos disponibles en Spotify. Pulsa cualquier portada para reproducir, o el botón Escuchar para abrir el tema en Spotify.
+        </p>
+      </div>
+
+      <div class="disco-controls reveal">
+        <button class="chip on" data-filter="all"    data-i18n="disco.filter.all">Todo</button>
+        <button class="chip"    data-filter="latest" data-i18n="disco.filter.latest">2026</button>
+        <button class="chip"    data-filter="album"  data-i18n="disco.filter.album">Álbumes</button>
+        <button class="chip"    data-filter="ep"     data-i18n="disco.filter.ep">EPs</button>
+        <button class="chip"    data-filter="single" data-i18n="disco.filter.single">Singles</button>
+      </div>
+
+      <div class="disco-grid" id="disco-grid"><!-- rendered by app.js --></div>
+    </div>
+  </section>
+
+  <!-- ============== SOCIAL-ONLY ============== -->
+  <section class="section alt" id="social">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-eyebrow reveal">
+          <span class="line"></span>
+          <span data-i18n="social.eyebrow">Sólo en Redes</span>
+        </div>
+        <h2 class="section-title reveal delay-1">
+          <span data-i18n="social.title.l1">Temas exclusivos</span>
+          <em data-i18n="social.title.em">para vos</em>
+        </h2>
+        <p class="section-sub reveal delay-2" data-i18n="social.sub">
+          Temas que estrenaron en mis redes — ahora podés escucharlos completos acá, sin recortes. Reproducción sólo en streaming. Cuando lleguen a Spotify y Apple Music, vas a ser de los primeros en saberlo.
+        </p>
+      </div>
+
+      <div class="social-grid" id="social-grid"><!-- rendered by app.js --></div>
+
+      <div class="social-note reveal">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-4.5-9.3-9C1 8.5 3 5 6.5 5c2 0 3.5 1 5.5 3 2-2 3.5-3 5.5-3 3.5 0 5.5 3.5 4 7-2.3 4.5-9.3 9-9.3 9z"/></svg>
+        </div>
+        <div data-i18n="social.note">Temas que viven en redes · pronto disponibles en Spotify y otras plataformas. Mientras tanto, esta web es el único lugar donde podés escucharlos enteros.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== COVERS ============== -->
+  <section class="section" id="covers">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-eyebrow reveal">
+          <span class="line"></span>
+          <span data-i18n="covers.eyebrow">Covers</span>
+        </div>
+        <h2 class="section-title reveal delay-1">
+          <span data-i18n="covers.title.l1">Versiones que</span>
+          <em data-i18n="covers.title.em">reinterpreto</em>
+        </h2>
+        <p class="section-sub reveal delay-2" data-i18n="covers.sub">
+          Canciones que me marcaron, reinterpretadas a mi forma. Sólo para escuchar — los derechos pertenecen a sus autores originales.
+        </p>
+      </div>
+
+      <div class="covers-wrap reveal" id="covers-wrap"><!-- rendered by app.js --></div>
+      <div class="covers-note" id="covers-note" data-i18n="covers.note">
+        Reproducción sólo en streaming · Derechos de los autores originales
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== INÉDITOS — VOTOS ============== -->
+  <section class="section" id="inedito">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-eyebrow reveal">
+          <span class="line"></span>
+          <span data-i18n="inedito.eyebrow">Inéditos</span>
+        </div>
+        <h2 class="section-title reveal delay-1">
+          <span data-i18n="inedito.title.l1">Votá cuál</span>
+          <em data-i18n="inedito.title.em">te llega</em>
+        </h2>
+        <p class="section-sub reveal delay-2" data-i18n="inedito.sub">
+          Temas inéditos, sin lanzar. Escuchá el estribillo, sentí cuál te toca y dejá tu voto. Lo que digan los fans decide cuál sale primero.
+        </p>
+      </div>
+
+      <div class="inedito-banner reveal">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-4.5-9.3-9C1 8.5 3 5 6.5 5c2 0 3.5 1 5.5 3 2-2 3.5-3 5.5-3 3.5 0 5.5 3.5 4 7-2.3 4.5-9.3 9-9.3 9z"/></svg>
+        </div>
+        <div class="copy" data-i18n-html="inedito.banner">
+          <strong>Tu voto cuenta.</strong> Marcá los inéditos que más te lleguen — los que más voten se lanzan primero.
+        </div>
+        <div class="total">
+          <div class="n" id="inedito-total">0</div>
+          <div class="lbl" data-i18n="inedito.total">Votos totales</div>
+        </div>
+      </div>
+
+      <div class="inedito-grid" id="inedito-grid"><!-- rendered by app.js --></div>
+    </div>
+  </section>
+
+  <!-- ============== NEWSLETTER ============== -->
+  <section class="newsletter" id="newsletter">
+    <div class="container newsletter-inner">
+      <div class="reveal">
+        <div class="section-eyebrow"><span class="line"></span><span data-i18n="news.eyebrow">Mantente Cerca</span></div>
+        <h2>
+          <span data-i18n="news.title.l1">Únete al</span>
+          <em data-i18n="news.title.em">viaje</em>
+        </h2>
+        <p data-i18n="news.p">
+          Recibe lanzamientos exclusivos, versiones especiales antes que nadie y sesiones íntimas en tu correo.
+        </p>
+      </div>
+
+      <div class="reveal delay-2">
+        <form class="subscribe-form" id="newsletter-form">
+          <input type="email" required placeholder="Tu email" data-i18n-placeholder="news.placeholder">
+          <button type="submit" data-i18n="news.cta">Suscribirme</button>
+        </form>
+        <div class="subscribe-note" data-i18n="news.note">Sin spam. Sólo música y momentos.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== CONTACT ============== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-eyebrow reveal">
+          <span class="line"></span>
+          <span data-i18n="contact.eyebrow">Contacto</span>
+        </div>
+        <h2 class="section-title reveal delay-1">
+          <span data-i18n="contact.title.l1">Hablemos.</span>
+          <em data-i18n="contact.title.em">Conectemos.</em>
+        </h2>
+        <p class="section-sub reveal delay-2" data-i18n="contact.sub">
+          Booking, colaboraciones, prensa o simplemente decirme qué tema te llegó.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-cards reveal">
+          <div class="contact-card">
+            <div class="lbl" data-i18n="contact.email">Email</div>
+            <div class="val"><a href="mailto:frescowalteresteban@gmail.com">frescowalteresteban@gmail.com</a></div>
+          </div>
+          <div class="contact-card">
+            <div class="lbl" data-i18n="contact.booking">Booking &amp; Prensa</div>
+            <div class="val"><a href="mailto:frescowalteresteban@gmail.com?subject=Booking%20-%20Walter%20Fresh">frescowalteresteban@gmail.com</a></div>
+          </div>
+        </div>
+
+        <div class="socials-block reveal delay-2">
+          <div class="section-eyebrow"><span class="line"></span><span data-i18n="contact.follow">Sígueme</span></div>
+
+          <a href="https://open.spotify.com/artist/1sRg7hmCkRmslxONx9BqQl" target="_blank" rel="noopener" class="social-row">
+            <div>
+              <div class="name">Spotify</div>
+              <div class="handle">Walter Fresh</div>
+            </div>
+            <div class="icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.5 17.32a.75.75 0 01-1.03.25c-2.82-1.72-6.37-2.11-10.55-1.16a.75.75 0 11-.33-1.46c4.57-1.04 8.5-.59 11.66 1.34.36.22.47.69.25 1.03zm1.47-3.28a.94.94 0 01-1.29.31c-3.23-1.99-8.16-2.56-11.99-1.4a.94.94 0 11-.55-1.8c4.38-1.33 9.81-.69 13.52 1.6.44.28.58.86.31 1.29zm.13-3.41C15.31 8.66 8.71 8.43 4.92 9.58a1.13 1.13 0 11-.66-2.16c4.35-1.32 11.63-1.06 16.21 1.66a1.13 1.13 0 01-1.16 1.94z"/></svg></div>
+          </a>
+
+          <a href="https://instagram.com/walterfresh.music" target="_blank" rel="noopener" class="social-row">
+            <div>
+              <div class="name">Instagram</div>
+              <div class="handle">@walterfresh.music</div>
+            </div>
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></div>
+          </a>
+
+          <a href="https://tiktok.com/@walterfresh57" target="_blank" rel="noopener" class="social-row">
+            <div>
+              <div class="name">TikTok</div>
+              <div class="handle">@walterfresh57</div>
+            </div>
+            <div class="icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.6 6.3a4.6 4.6 0 01-3.4-1.5 4.6 4.6 0 01-1.2-3H11v12.4a2.6 2.6 0 11-2.6-2.6c.3 0 .6 0 .8.1V8.3a6 6 0 105.4 6V9.5a7.4 7.4 0 005 1.7V7.8a4.6 4.6 0 01-.2-.1 4.6 4.6 0 01.2-1.4z"/></svg></div>
+          </a>
+
+          <a href="https://facebook.com/WalterFresh57" target="_blank" rel="noopener" class="social-row">
+            <div>
+              <div class="name">Facebook</div>
+              <div class="handle">@walterfresh57</div>
+            </div>
+            <div class="icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 22v-9h3l.5-3.5h-3.5V7.2c0-1 .3-1.7 1.7-1.7H17V2.3c-.4-.1-1.5-.2-2.7-.2-2.7 0-4.5 1.6-4.5 4.6V9.5H7V13h2.8v9h3.7z"/></svg></div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== FOOTER ============== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="mark">Walter Fresh</div>
+          <div class="tags" data-i18n="footer.tagline">Deep House • R&amp;B • Melodic • Emotional</div>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.nav">Navegación</h4>
+          <a href="#home"     data-i18n="nav.home">Inicio</a>
+          <a href="#about"    data-i18n="nav.about">Sobre Mí</a>
+          <a href="#upcoming" data-i18n="nav.upcoming">Lanzamientos</a>
+          <a href="#music"    data-i18n="nav.music">Discografía</a>
+          <a href="#contact"  data-i18n="nav.contact">Contacto</a>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.music">Música</h4>
+          <a href="https://open.spotify.com/artist/1sRg7hmCkRmslxONx9BqQl" target="_blank" rel="noopener">Spotify</a>
+          <a href="#music">Discografía</a>
+          <a href="#upcoming">Próximos Lanzamientos</a>
+          <a href="#social">Sólo en Redes</a>
+          <a href="#covers">Covers</a>
+          <a href="#inedito">Inéditos</a>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.follow">Seguir</h4>
+          <a href="https://instagram.com/walterfresh.music" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://tiktok.com/@walterfresh57" target="_blank" rel="noopener">TikTok</a>
+          <a href="https://facebook.com/WalterFresh57" target="_blank" rel="noopener">Facebook</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 Walter Fresh — <span data-i18n="footer.rights">Todos los derechos reservados.</span></div>
+        <div>Made with ♥ — Argentina</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============== TWEAKS PANEL ============== -->
+  <div class="tweaks-panel">
+    <button class="tweaks-close" aria-label="Cerrar">✕</button>
+    <h4>Tweaks</h4>
+    <div class="sub">Personaliza el sitio</div>
+
+    <div class="tw-row">
+      <label>Color de acento</label>
+      <div class="tw-swatches">
+        <button class="tw-swatch on" data-accent="gold"   style="background:#d4b882" aria-label="Dorado"></button>
+        <button class="tw-swatch"    data-accent="copper" style="background:#c87f4a" aria-label="Cobre"></button>
+        <button class="tw-swatch"    data-accent="silver" style="background:#cfd2d6" aria-label="Plateado"></button>
+        <button class="tw-swatch"    data-accent="blue"   style="background:#7faad8" aria-label="Azul"></button>
+      </div>
+    </div>
+
+    <div class="tw-row">
+      <label>Tipografía del nombre</label>
+      <div class="tw-options">
+        <button class="tw-opt on" data-font="great-vibes">Great Vibes</button>
+        <button class="tw-opt"    data-font="allura">Allura</button>
+        <button class="tw-opt"    data-font="pinyon">Pinyon</button>
+        <button class="tw-opt"    data-font="dancing">Dancing</button>
+      </div>
+    </div>
+
+    <div class="tw-row">
+      <label>Animaciones</label>
+      <div class="tw-toggle">
+        <button class="tw-switch on" data-toggle="animations" aria-label="Toggle animations"></button>
+        <span style="font-size:11px;color:var(--ink-mute);letter-spacing:0.14em;text-transform:uppercase">Fade · Reveal</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
