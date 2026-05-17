@@ -128,27 +128,27 @@ window.WF_COVERS = [
   {
     title: "Yo, Mañana",
     subtitle: "(Cover) Walter Fresh",
-    file: "assets/covers/yo-manana.mp3"
+    file: "assets/audio/yo-manana.mp3"
   },
   {
     title: "Esa Mujer",
     subtitle: "(Cover) Walter Fresh",
-    file: "assets/covers/esa-mujer.mp3"
+    file: "assets/audio/esa-mujer.mp3"
   },
   {
     title: "El Embrujo",
     subtitle: "(Cover) Walter Fresh",
-    file: "assets/covers/el-embrujo.mp3"
+    file: "assets/audio/el-embrujo.mp3"
   },
   {
     title: "A Falta de Ti",
     subtitle: "(Cover) Walter Fresh",
-    file: "assets/covers/a-falta-de-ti.mp3"
+    file: "assets/audio/a-falta-de-ti.mp3"
   },
   {
     title: "Era Mía",
     subtitle: "(Cover) Walter Fresh",
-    file: "assets/covers/era-mia.mp3"
+    file: "assets/audio/era-mia.mp3"
   }
 ];
 // Próximos lanzamientos — videos con portada + estribillo
