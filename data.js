@@ -143,6 +143,7 @@ window.WF_UPCOMING = [
     dateShort: "18 · MAY",
     status: "confirmed",
     video: "assets/upcoming/le-pregunte-al-cielo.mp4",
+    cover: "assets/upcoming/le-pregunte-al-cielo.png",
     presave: "https://distrokid.com/hyperfollow/walterfresh/le-pregunte-al-cielo-special-version?ref=release"
   },
   {
@@ -152,7 +153,8 @@ window.WF_UPCOMING = [
     date: "22 de Mayo 2026",
     dateShort: "22 · MAY",
     status: "confirmed",
-    video: "assets/upcoming/esta-noche.mp4",
+    video: "assets/upcoming/esta-noche.mp4"
+    cover: "assets/upcoming/esta-noche.png",
     presave: "https://distrokid.com/hyperfollow/walterfresh/esta-noche?ref=release",
     tracklist: [
       "Bella Locura — Versión Especial",
@@ -167,7 +169,8 @@ window.WF_UPCOMING = [
     type: "Single",
     date: "Próximamente",
     status: "tba",
-    video: "assets/upcoming/bajo-tu-piel.mp4"
+    video: "assets/upcoming/bajo-tu-piel.mp4",
+    cover: "assets/upcoming/bajo-tu-piel.png"
   },
   {
     title: "En Mis Sueños",
@@ -175,6 +178,7 @@ window.WF_UPCOMING = [
     date: "Próximamente",
     status: "tba",
     video: "assets/upcoming/en-mis-suenos.mp4"
+    cover: "assets/upcoming/en-mis-suenos.png"
   },
   {
     title: "Llueve",
@@ -196,5 +200,6 @@ window.WF_UPCOMING = [
     date: "Próximamente",
     status: "tba",
     video: "assets/upcoming/panuelo-al-viento.mp4"
+    cover: "assets/upcoming/panuelo-al-viento.png"
   }
 ];
