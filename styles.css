@@ -222,7 +222,7 @@ body.no-anim .reveal { opacity: 1; transform: none; transition: none !important;
     color: var(--gold);
     margin: 0 0 32px;
     letter-spacing: -0.02em;
-    font-weight: 100;
+    font-weight: 300;
 
     background: linear-gradient(
         180deg,
