@@ -218,11 +218,9 @@ body.no-anim .reveal { opacity: 1; transform: none; transition: none !important;
 .hero-title {
   font-family: var(--font-script);
   font-size: clamp(90px, 14vw, 260px);
-  line-height: 1.05;
-  color: var(--gold);
-  margin: 0 0 32px;
-  letter-spacing: -0.015em;
-  font-weight: 400;
+  line-height: 0.92;
+  letter-spacing: 0.02em;
+  font-weight: 300;
   background: linear-gradient(180deg, var(--gold-2) 0%, var(--gold) 55%, var(--gold-deep) 100%);
   -webkit-background-clip: text;
   background-clip: text;
