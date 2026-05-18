@@ -216,20 +216,21 @@ body.no-anim .reveal { opacity: 1; transform: none; transition: none !important;
 
 .hero-title {
   font-family: var(--font-script);
-  font-size: clamp(80px, 13vw, 220px);
+  font-size: clamp(90px, 14vw, 260px);
   line-height: 1.05;
   color: var(--gold);
   margin: 0 0 32px;
-  letter-spacing: 0.005em;
+  letter-spacing: -0.015em;
   font-weight: 400;
   background: linear-gradient(180deg, var(--gold-2) 0%, var(--gold) 55%, var(--gold-deep) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  filter: drop-shadow(0 8px 30px rgba(212, 184, 130, 0.18));
+  filter: drop-shadow(0 0 42px rgba(212, 184, 130, 0.28));
   max-width: 1000px;
   padding: 0.15em 0.08em 0.18em;
   margin-left: -0.05em;
+  transform: scaleY(1.02);
 }
 
 .hero-tags {
