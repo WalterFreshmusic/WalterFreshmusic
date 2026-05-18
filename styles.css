@@ -216,17 +216,29 @@ body.no-anim .reveal { opacity: 1; transform: none; transition: none !important;
 .hero-eyebrow .line { width: 40px; height: 1px; background: var(--gold); opacity: 0.6; }
 
 .hero-title {
-  font-family: var(--font-script);
-  font-size: clamp(90px, 14vw, 260px);
-  line-height: 0.92;
-  letter-spacing: 0.02em;
-  font-weight: 300;
-  background: linear-gradient(180deg, var(--gold-2) 0%, var(--gold) 55%, var(--gold-deep) 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  filter: drop-shadow(0 0 42px rgba(212, 184, 130, 0.28));
-  max-width: 1000px;
+    font-family: var(--font-script);
+    font-size: clamp(100px, 15vw, 280px);
+    line-height: 0.88;
+    color: var(--gold);
+    margin: 0 0 32px;
+    letter-spacing: -0.02em;
+    font-weight: 100;
+
+    background: linear-gradient(
+        180deg,
+        #fff6d6 0%,
+        #f4deb0 35%,
+        #d4b082 100%
+    );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    filter: drop-shadow(0 0 22px rgba(212,176,130,0.18));
+
+    max-width: 1000px;
+}
   padding: 0.15em 0.08em 0.18em;
   margin-left: -0.05em;
   transform: scaleY(1.02);
