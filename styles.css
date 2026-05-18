@@ -217,7 +217,7 @@ body.no-anim .reveal { opacity: 1; transform: none; transition: none !important;
 
 .hero-title {
     font-family: var(--font-script);
-    font-size: clamp(82px, 12vw, 220px);
+    font-size: clamp(76px, 11vw, 200px);
     line-height: 0.88;
     color: var(--gold);
     margin: 0 0 32px;
