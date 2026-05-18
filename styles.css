@@ -223,6 +223,9 @@ body.no-anim .reveal { opacity: 1; transform: none; transition: none !important;
     margin: 0 0 32px;
     letter-spacing: -0.02em;
     transform: scaleY(0.92);
+    position: relative;
+    left: -40px;
+    top: -20px;
     font-weight: 300;
 
     background: linear-gradient(
