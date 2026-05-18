@@ -176,11 +176,12 @@ body.no-anim .reveal { opacity: 1; transform: none; transition: none !important;
   background: var(--bg);
 }
 .hero-bg {
-  position: absolute; inset: 0;
-  background-image: url("assets/walter-fresh-hero.png");
-  background-size: cover;
-  background-position: center 25%;
-  filter: brightness(0.55) contrast(1.05) saturate(0.85);
+    position: absolute;
+    inset: 0;
+    background-image: url("walter-fresh-hero.png");
+    background-size: cover;
+    background-position: center 25%;
+    filter: brightness(0.55) contrast(1.05) saturate(0.85);
 }
 .hero-bg::after {
   content: ""; position: absolute; inset: 0;
