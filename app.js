@@ -798,6 +798,12 @@
     "animations": true
   }/*EDITMODE-END*/;
 
+  // Style locked — hide tweaks panel permanently
+  document.addEventListener("DOMContentLoaded", () => {
+    const panel = document.querySelector(".tweaks-panel");
+    if (panel) panel.remove();
+  });
+
   const ACCENT_MAP = {
     gold:   { gold: "#d4b882", gold2: "#e8d2a3", deep: "#a88a52" },
     copper: { gold: "#c87f4a", gold2: "#e09c66", deep: "#8a4a26" },
@@ -844,16 +850,6 @@
   function bindTweaks() {
     const panel = document.querySelector(".tweaks-panel");
     if (!panel) return;
-
-    // Inject floating trigger button
-    const trigger = document.createElement("button");
-    trigger.className = "tweaks-trigger";
-    trigger.setAttribute("aria-label", "Personalizar");
-    trigger.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-      <circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/>
-    </svg>`;
-    trigger.addEventListener("click", () => panel.classList.toggle("open"));
-    document.body.appendChild(trigger);
 
     window.addEventListener("message", (e) => {
       if (!e.data) return;
