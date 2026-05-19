@@ -25,6 +25,11 @@
   --font-sans: "Inter", "Helvetica Neue", Arial, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
 
+  /* Colors locked: Dorado + Pinyon — Walter Fresh 2026 */
+  --gold: #d4b882;
+  --gold-2: #e8d2a3;
+  --gold-deep: #a88a52;
+
   --tracking-wide: 0.36em;
   --tracking-wider: 0.52em;
 
