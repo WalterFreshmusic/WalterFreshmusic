@@ -388,9 +388,23 @@ body.no-anim .reveal { opacity: 1; transform: none; transition: none !important;
   .about-grid { grid-template-columns: 1fr; gap: 50px; }
 }
 
+.about-video-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  overflow: hidden;
+  border-radius: 4px;
+}
+.about-video-wrap iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border: none;
+}
+
 .about-portrait {
   position: relative;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 9 / 16;
   overflow: hidden;
 }
 .about-portrait img {
