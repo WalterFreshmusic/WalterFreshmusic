@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@200;300;400;500&family=Pinyon+Script&family=Allura&family=Great+Vibes&family=Dancing+Script:wght@500;600&display=swap');
 /* =========================================================
    Walter Fresh — Sitio oficial
    Estilo: Editorial cinemático, negro + dorado champagne
@@ -20,13 +20,13 @@
   --accent-soft: rgba(212, 184, 130, 0.12);
   --shadow: 0 30px 80px -20px rgba(0,0,0,0.7);
 
-  --font-script: "Allura", cursive;
-  --font-display: "Cormorant Garamond", "Playfair Display", Georgia, serif;
+  --font-script: "Pinyon Script", cursive;
+  --font-display: "Cormorant Garamond", Georgia, serif;
   --font-sans: "Inter", "Helvetica Neue", Arial, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
 
-  --tracking-wide: 0.32em;
-  --tracking-wider: 0.45em;
+  --tracking-wide: 0.36em;
+  --tracking-wider: 0.52em;
 
   --radius: 2px;
   --radius-lg: 6px;
@@ -43,12 +43,17 @@ html {
 
 body {
   font-family: var(--font-sans);
+  font-weight: 300;
   color: var(--ink);
   background: var(--bg);
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
   cursor: none;
+  font-size: 15px;
+  line-height: 1.75;
+  letter-spacing: 0.01em;
 }
 
 img { max-width: 100%; display: block; }
@@ -112,16 +117,18 @@ body.no-anim .reveal { opacity: 1; transform: none; transition: none !important;
 
 .brand-mark {
   font-family: var(--font-script);
-  font-size: 32px;
+  font-size: 36px;
   color: var(--gold);
   line-height: 1;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.02em;
+  font-weight: 400;
 }
 
 .nav-links {
-  display: flex; gap: 38px; align-items: center;
-  font-size: 12px;
-  letter-spacing: var(--tracking-wide);
+  display: flex; gap: 42px; align-items: center;
+  font-size: 11px;
+  font-weight: 300;
+  letter-spacing: var(--tracking-wider);
   text-transform: uppercase;
   color: var(--ink-dim);
 }
@@ -209,7 +216,8 @@ body.no-anim .reveal { opacity: 1; transform: none; transition: none !important;
 
 .hero-eyebrow {
   display: flex; align-items: center; gap: 14px;
-  font-size: 11px; letter-spacing: var(--tracking-wider);
+  font-size: 10px; letter-spacing: var(--tracking-wider);
+  font-weight: 300;
   text-transform: uppercase; color: var(--gold);
   margin-bottom: 28px;
 }
@@ -217,56 +225,53 @@ body.no-anim .reveal { opacity: 1; transform: none; transition: none !important;
 
 .hero-title {
     font-family: var(--font-script);
-    font-size: clamp(76px, 11vw, 200px);
+    font-size: clamp(80px, 12vw, 210px);
     line-height: 0.88;
     color: var(--gold);
     margin: 0 0 32px;
-    letter-spacing: -0.02em;
-    transform: scaleY(0.92);
+    letter-spacing: 0.01em;
+    transform: scaleY(0.94);
     position: relative;
     left: -55px;
     top: -5px;
-    font-weight: 300;
+    font-weight: 400;
 
     background: linear-gradient(
         180deg,
-        #fff6d6 0%,
-        #f4deb0 35%,
-        #d4b082 100%
+        #fff8e0 0%,
+        #f4deb0 30%,
+        #c9a76a 100%
     );
 
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 
-    filter: drop-shadow(0 0 22px rgba(212,176,130,0.18));
+    filter: drop-shadow(0 0 28px rgba(212,176,130,0.14));
 
-    max-width: 1000px;
-}
-  padding: 0.15em 0.08em 0.18em;
-  margin-left: -0.05em;
-  transform: scaleY(1.02);
+    max-width: 1100px;
 }
 
 .hero-tags {
-  font-size: clamp(11px, 1.1vw, 14px);
+  font-size: 10px;
+  font-weight: 300;
   letter-spacing: var(--tracking-wider);
   text-transform: uppercase;
-  color: var(--ink);
-  display: flex; gap: 22px; flex-wrap: wrap;
+  color: var(--ink-dim);
+  display: flex; gap: 24px; flex-wrap: wrap;
   margin-bottom: 40px;
 }
 .hero-tags .dot { color: var(--gold); }
 
 .hero-lede {
-  max-width: 460px;
+  max-width: 480px;
   font-family: var(--font-display);
-  font-size: 19px;
-  line-height: 1.55;
+  font-size: 20px;
+  line-height: 1.6;
   color: var(--ink-dim);
   margin-bottom: 44px;
   font-style: italic;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .hero-cta { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 80px; }
@@ -330,17 +335,18 @@ body.no-anim .reveal { opacity: 1; transform: none; transition: none !important;
 .section-head { display: flex; flex-direction: column; gap: 14px; margin-bottom: 70px; }
 .section-eyebrow {
   display: flex; align-items: center; gap: 14px;
-  font-size: 11px; letter-spacing: var(--tracking-wider);
+  font-size: 10px; font-weight: 300;
+  letter-spacing: var(--tracking-wider);
   text-transform: uppercase; color: var(--gold);
 }
 .section-eyebrow .line { width: 30px; height: 1px; background: var(--gold); opacity: 0.6; }
 
 .section-title {
   font-family: var(--font-display);
-  font-size: clamp(38px, 5.5vw, 64px);
-  font-weight: 400;
-  line-height: 1.05;
-  letter-spacing: -0.01em;
+  font-size: clamp(36px, 5vw, 62px);
+  font-weight: 300;
+  line-height: 1.08;
+  letter-spacing: 0.01em;
   color: var(--ink);
   margin: 0;
   max-width: 14ch;
@@ -350,17 +356,18 @@ body.no-anim .reveal { opacity: 1; transform: none; transition: none !important;
   font-style: normal;
   color: var(--gold);
   font-weight: 400;
-  font-size: 1.15em;
-  letter-spacing: 0;
+  font-size: 1.2em;
+  letter-spacing: 0.01em;
 }
 
 .section-sub {
-  max-width: 56ch;
+  max-width: 58ch;
   font-family: var(--font-display);
-  font-size: 19px;
-  line-height: 1.55;
+  font-size: 18px;
+  line-height: 1.65;
   color: var(--ink-dim);
   font-style: italic;
+  font-weight: 300;
 }
 
 /* =========================================================
@@ -412,17 +419,17 @@ body.no-anim .reveal { opacity: 1; transform: none; transition: none !important;
 .about-text { display: flex; flex-direction: column; gap: 24px; }
 .about-text .lede {
   font-family: var(--font-display);
-  font-size: clamp(26px, 3vw, 36px);
-  line-height: 1.25;
+  font-size: clamp(24px, 2.8vw, 34px);
+  line-height: 1.3;
   color: var(--ink);
   font-style: italic;
-  font-weight: 400;
+  font-weight: 300;
   margin: 0;
 }
 .about-text .lede em { font-family: var(--font-script); font-style: normal; color: var(--gold); font-size: 1.2em; }
 
 .about-text p {
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.85;
   color: var(--ink-dim);
   max-width: 58ch;
@@ -1779,7 +1786,59 @@ body.no-anim .reveal { opacity: 1; transform: none; transition: none !important;
 }
 
 /* Font alternatives */
+body.font-great-vibes { --font-script: "Great Vibes", cursive; }
 body.font-allura { --font-script: "Allura", cursive; }
 body.font-pinyon { --font-script: "Pinyon Script", cursive; }
 body.font-dancing { --font-script: "Dancing Script", cursive; }
-body.font-dancing .hero-title { font-weight: 600; }
+body.font-dancing .hero-title { font-weight: 500; }
+
+/* =========================================================
+   TWEAKS TRIGGER BUTTON
+   ========================================================= */
+.tweaks-trigger {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 199;
+  width: 48px; height: 48px;
+  border-radius: 50%;
+  background: rgba(15,12,10,0.9);
+  border: 1px solid var(--line-strong);
+  color: var(--gold);
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+  transition: transform 0.3s, background 0.3s, border-color 0.3s;
+  backdrop-filter: blur(10px);
+}
+.tweaks-trigger:hover {
+  transform: scale(1.1) rotate(30deg);
+  background: rgba(212,184,130,0.12);
+  border-color: var(--gold);
+}
+.tweaks-trigger svg { width: 18px; height: 18px; }
+
+/* =========================================================
+   UPCOMING — RELEASED STATE
+   ========================================================= */
+.badge-released {
+  background: linear-gradient(135deg, #1db954, #17a349);
+  color: #fff;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 100px;
+  font-weight: 600;
+  animation: pulse-green 2s infinite;
+}
+@keyframes pulse-green {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(29,185,84,0.4); }
+  50% { box-shadow: 0 0 0 8px rgba(29,185,84,0); }
+}
+.upcoming-card.is-released .upcoming-play { display: none; }
+.up-btn.spotify-live {
+  background: #1db954 !important;
+  border-color: #1db954 !important;
+  color: #fff !important;
+}
+.up-btn.spotify-live:hover { background: #17a349 !important; }
