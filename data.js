@@ -2,6 +2,7 @@
 window.WF_RELEASES = [
   // ---- 2026 — Álbumes y EPs principales ----
   { id: "0XrSt7AnheoSKxxO9Elroe", title: "¿Te Vas?", type: "Single", year: "2026", featured: true, tag: "Último lanzamiento" },
+  { id: "6pn1V3SGmvLYmlfdppeY9t", title: "Le Pregunté al Cielo", type: "Single", year: "2026", tag: "Versión Especial" },
   { id: "47YLVIHa0FSgUspi5A2Tlu", title: "Donde el Amor Permanece", type: "EP", year: "2026" },
   { id: "1Yt363wN5twGTuyj9vq66o", title: "No Avisó", type: "Single", year: "2026" },
   { id: "4E19mZEeDv1I3O4z7bpRIi", title: "Dios", type: "Single", year: "2026" },
@@ -161,6 +162,8 @@ window.WF_UPCOMING = [
     date: "18 de Mayo 2026",
     dateShort: "18 · MAY",
     status: "confirmed",
+    releaseDate: "2026-05-18",
+    spotifyId: "6pn1V3SGmvLYmlfdppeY9t",
     video: "assets/upcoming/le-pregunte-al-cielo.mp4",
     cover: "assets/upcoming/le-pregunte-al-cielo.png",
     presave: "https://distrokid.com/hyperfollow/walterfresh/le-pregunte-al-cielo-special-version?ref=release"
@@ -172,6 +175,8 @@ window.WF_UPCOMING = [
     date: "22 de Mayo 2026",
     dateShort: "22 · MAY",
     status: "confirmed",
+    releaseDate: "2026-05-22",
+    spotifyId: "",
     video: "assets/upcoming/esta-noche.mp4",
     cover: "assets/upcoming/esta-noche.png",
     presave: "https://distrokid.com/hyperfollow/walterfresh/esta-noche?ref=release",
