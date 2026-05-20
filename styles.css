@@ -395,11 +395,13 @@ body.no-anim .reveal { opacity: 1; transform: none; transition: none !important;
 .about-video-wrap {
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 9 / 16;
   overflow: hidden;
   border-radius: 6px;
   background: #000;
   box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+  max-width: 340px;
+  margin: 0 auto;
 }
 .about-video-wrap video {
   position: absolute;
