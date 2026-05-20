@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Walter Fresh — Página Oficial</title>
+  <meta property="og:title" content="Walter Fresh — Página Oficial">
+  <meta property="og:description" content="Descubrí toda mi música. Discografía completa, estrenos y más.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Cormorant+Garamond:wght@300;400&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #080604;
+      color: #f4ece0;
+      font-family: 'Inter', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    /* Video de fondo */
+    .bg-video {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+    }
+    .bg-video iframe {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      pointer-events: none;
+      transform: scale(1.1);
+    }
+
+    /* Overlay oscuro encima del video */
+    .overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 1;
+      background: linear-gradient(
+        to bottom,
+        rgba(8,6,4,0.55) 0%,
+        rgba(8,6,4,0.3) 40%,
+        rgba(8,6,4,0.7) 75%,
+        rgba(8,6,4,0.95) 100%
+      );
+    }
+
+    /* Contenido */
+    .content {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      min-height: 100vh;
+      padding: 40px 24px 60px;
+      text-align: center;
+      gap: 28px;
+    }
+
+    .name {
+      font-family: 'Pinyon Script', cursive;
+      font-size: clamp(64px, 18vw, 120px);
+      background: linear-gradient(180deg, #fff8e0 0%, #f4deb0 35%, #c9a76a 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: drop-shadow(0 0 30px rgba(212,176,130,0.25));
+      line-height: 1;
+      animation: fadeUp 1s ease both;
+    }
+
+    .tagline {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(15px, 4vw, 20px);
+      font-style: italic;
+      font-weight: 300;
+      color: rgba(244,236,224,0.75);
+      letter-spacing: 0.08em;
+      animation: fadeUp 1s 0.2s ease both;
+    }
+
+    .divider {
+      width: 40px;
+      height: 1px;
+      background: rgba(212,184,130,0.5);
+      animation: fadeUp 1s 0.3s ease both;
+    }
+
+    .btn-main {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      padding: 18px 40px;
+      background: linear-gradient(135deg, #d4b882, #c9a76a);
+      color: #080604;
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border-radius: 100px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 8px 40px rgba(212,184,130,0.35);
+      animation: fadeUp 1s 0.4s ease both;
+    }
+    .btn-main:hover {
+      transform: translateY(-3px) scale(1.03);
+      box-shadow: 0 16px 50px rgba(212,184,130,0.5);
+    }
+    .btn-main svg {
+      width: 16px; height: 16px;
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 32px;
+      border: 1px solid rgba(212,184,130,0.4);
+      color: rgba(244,236,224,0.8);
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      font-weight: 300;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border-radius: 100px;
+      transition: all 0.3s;
+      animation: fadeUp 1s 0.5s ease both;
+    }
+    .btn-secondary:hover {
+      background: rgba(212,184,130,0.1);
+      border-color: rgba(212,184,130,0.7);
+      color: #d4b882;
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .footer-note {
+      font-size: 10px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: rgba(244,236,224,0.35);
+      animation: fadeUp 1s 0.6s ease both;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Grain overlay */
+    body::after {
+      content: "";
+      position: fixed; inset: 0;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/><feColorMatrix values='0 0 0 0 0.83  0 0 0 0 0.72  0 0 0 0 0.51  0 0 0 0 0.06 0'/></filter><rect width='200' height='200' filter='url(%23n)'/></svg>");
+      opacity: 0.4;
+      pointer-events: none;
+      z-index: 3;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Video de fondo -->
+  <div class="bg-video">
+    <iframe
+      src="https://www.youtube.com/embed/X_ffIbzmjbE?autoplay=1&mute=0&loop=1&playlist=X_ffIbzmjbE&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1"
+      frameborder="0"
+      allow="autoplay; encrypted-media"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <div class="overlay"></div>
+
+  <div class="content">
+    <div class="name">Walter Fresh</div>
+    <div class="tagline">Deep House · R&B · Melodic · Emotional</div>
+    <div class="divider"></div>
+
+    <div class="buttons">
+      <a class="btn-main" href="https://walterfreshmusic.github.io/WalterFreshmusic/" target="_blank">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/>
+          <path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/>
+        </svg>
+        Visitá mi página oficial
+      </a>
+      <a class="btn-secondary" href="https://open.spotify.com/artist/1sRg7hmCkRmslxONx9BqQl" target="_blank">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.5 17.32a.75.75 0 01-1.03.25c-2.82-1.72-6.37-2.11-10.55-1.16a.75.75 0 11-.33-1.46c4.57-1.04 8.5-.59 11.66 1.34.36.22.47.69.25 1.03zm1.47-3.28a.94.94 0 01-1.29.31c-3.23-1.99-8.16-2.56-11.99-1.4a.94.94 0 11-.55-1.8c4.38-1.33 9.81-.69 13.52 1.6.44.28.58.86.31 1.29zm.13-3.41C15.31 8.66 8.71 8.43 4.92 9.58a1.13 1.13 0 11-.66-2.16c4.35-1.32 11.63-1.06 16.21 1.66a1.13 1.13 0 01-1.16 1.94z"/></svg>
+        Escuchar en Spotify
+      </a>
+    </div>
+
+    <div class="footer-note">© 2026 Walter Fresh — Argentina</div>
+  </div>
+
+</body>
+</html>
