@@ -391,7 +391,7 @@ body.no-anim .reveal { opacity: 1; transform: none; transition: none !important;
 .about-video-wrap {
   position: relative;
   width: 100%;
-  aspect-ratio: 9 / 16;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
   border-radius: 4px;
   background: #000;
@@ -412,7 +412,6 @@ body.no-anim .reveal { opacity: 1; transform: none; transition: none !important;
 
 .about-portrait {
   position: relative;
-  aspect-ratio: 9 / 16;
   overflow: hidden;
 }
 .about-portrait img {
