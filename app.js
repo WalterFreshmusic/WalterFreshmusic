@@ -511,10 +511,7 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 17h5l-1.4-1.4A7 7 0 003 14a7 7 0 0014 1.5"/><path d="M9 11l3 3 5-5"/></svg>
               <span>${LANG === "en" ? "Remind me" : "Avisame"}</span>
             </a>`
-          : `<button class="up-btn ghost" data-notify="${r.title}">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 17h5l-1.4-1.4A7 7 0 003 14a7 7 0 0014 1.5"/><path d="M9 11l3 3 5-5"/></svg>
-              <span>${LANG === "en" ? "Notify me" : "Avisame cuando salga"}</span>
-            </button>`;
+          : ``;
 
       return `
       <article class="upcoming-card reveal delay-${i % 4} ${featured ? "featured" : "tba"} ${released ? "is-released" : ""}" data-idx="${i}">
