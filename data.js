@@ -176,7 +176,7 @@ window.WF_UPCOMING = [
     dateShort: "22 · MAY",
     status: "confirmed",
     releaseDate: "2026-05-22",
-    spotifyId: "",
+    spotifyId: "7domcUtwP85reJijAbxDhX",
     video: "assets/upcoming/esta-noche.mp4",
     cover: "assets/upcoming/esta-noche.png",
     presave: "https://distrokid.com/hyperfollow/walterfresh/esta-noche?ref=release",
